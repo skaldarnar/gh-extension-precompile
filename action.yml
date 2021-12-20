@@ -22,7 +22,7 @@ runs:
     # TODO i hate setting this up even for people not using the default Go
     # build script, but there's no way to conditionalize it that I can figure
     # out.
-    - uses: skaldarnar/setup-go@main
+    - uses: actions/setup-go@v2
       with:
         stable: ${{ inputs.go_stable }}
         go-version: ${{ inputs.go_version }}
